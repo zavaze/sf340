@@ -1,8 +1,11 @@
-npm install react-router-dom
-npm install react-icons
+install\
 
-## start run project
-npm start
+###`npm install react-router-dom`
 
-## build project
-npm run build
+###`npm install react-icons`
+
+start run project\
+###`npm start`
+
+build project\
+###`npm run build`
