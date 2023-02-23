@@ -1,8 +1,8 @@
-install\
+install
 
-###`npm install react-router-dom`
+###`npm install`
 
-###`npm install react-icons`
+
 
 start run project\
 ###`npm start`
