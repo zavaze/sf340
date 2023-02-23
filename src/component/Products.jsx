@@ -55,7 +55,7 @@ const Products = () => {
               </div>
             </div>
           </div>
-          <div className="buy">
+          <div className="buy-con">
             <Link to="/product/butter">
               <button className="buy-btn">buy</button>
             </Link>
@@ -90,7 +90,7 @@ const Products = () => {
               </div>
             </div>
           </div>
-          <div className="buy">
+          <div className="buy-con">
             <button className="buy-btn">buy</button>
           </div>
         </div>
@@ -122,7 +122,7 @@ const Products = () => {
               </div>
             </div>
           </div>
-          <div className="buy">
+          <div className="buy-con">
             <button className="buy-btn">buy</button>
           </div>
         </div>
