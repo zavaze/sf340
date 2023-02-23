@@ -1,0 +1,170 @@
+.products-con {
+    padding-top: 20vh;
+    display: flex;
+
+}
+
+.products-list {
+    position: absolute;
+    list-style: none;
+}
+
+.products-img {
+    position: relative;
+    right: 200px;
+    width: 100%;
+}
+
+.pd1,
+.pd2,
+.pd3,
+.pd4,
+.pd5 {
+    position: absolute;
+}
+
+.pd1 {
+    top: -600px;
+    left: 130px;
+}
+
+.pd2 {
+    top: -600px;
+    left: 400px;
+}
+
+.pd3 {
+    top: -470px;
+    left: 550px;
+}
+
+.pd4 {
+    top: -180px;
+    left: 400px;
+}
+
+.pd5 {
+    top: -110px;
+    left: 130px;
+}
+
+.products_left {
+    max-width: 800px;
+    min-width: 800px;
+}
+
+.products_right {
+    display: flex;
+    gap: 1.5rem;
+
+    flex-wrap: wrap;
+}
+
+.card-con {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 2rem;
+    width: 200px;
+    height: 290px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    transition: all ease-in 0.1s;
+}
+
+.card-con img {
+    width: 150px;
+
+}
+
+.card-con:hover {
+    transform: scale(1.1);
+
+}
+
+.product-thumb {
+    display: flex;
+    justify-content: center;
+}
+
+.card-con p,
+.card-con h2 {
+    margin: 0;
+}
+
+.product-desc {
+    color: #6B6B6B;
+}
+
+
+.recommen {
+    text-transform: uppercase;
+    background: #FDD77D;
+    border-radius: 17px;
+    width: 123px;
+    height: 25px;
+    text-align: center;
+    color: red;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+}
+
+.star {
+    color: #F2B94D;
+}
+
+.price-hearth {
+    display: flex;
+    justify-content: space-between;
+}
+
+.like_share {
+    display: flex;
+    gap: 0.2rem;
+}
+
+.hearth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 5px;
+    color: #ffff;
+    background: red;
+}
+
+.share {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 5px;
+    color: #ffff;
+    background: #000;
+}
+
+.buy {
+    display: flex;
+    justify-content: center;
+}
+
+.buy-btn {
+    font-weight: 500;
+    font-size: 18px;
+    width: 77px;
+    height: 40px;
+    border: 1px solid #2F9416;
+    color: #2F9416;
+    background: none;
+    border-radius: 20px;
+}
+
+.buy-btn:hover {
+    background: #2F9416;
+    color: #ffff;
+}

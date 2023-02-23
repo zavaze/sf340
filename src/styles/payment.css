@@ -1,0 +1,94 @@
+.payment-con {
+    padding-top: 3rem;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.bank {
+    display: flex;
+    gap: 3rem;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    align-items: first baseline;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="date"],
+.form input[type="tel"],
+.form input[type="time"],
+.form input[type="number"] {
+    width: 310px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: 52px;
+    background: #DCDCDC;
+    border: none;
+    border-radius: 15px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.attend {
+    padding-top: 10vh;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.review {
+    color: red;
+    letter-spacing: 0.05em;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 210%;
+}
+
+.submit-cancel {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.submit-btn {
+    width: 209.71px;
+    height: 62px;
+    border: 1px solid #2F9416;
+    background: #ffff;
+    color: #2F9416;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 133.4%;
+    cursor: pointer;
+    transition: all ease-in-out 0.1s;
+}
+
+.submit-btn:hover {
+    background: #2F9416;
+    color: #ffff;
+    transform: scale(1.1);
+}
+
+.cancel-btn {
+    width: 209.71px;
+    height: 62px;
+    border: 1px solid #CC0D0D;
+    background: #ffff;
+    color: #CC0D0D;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 133.4%;
+    cursor: pointer;
+    transition: all ease-in-out 0.1s;
+}
+
+.cancel-btn:hover {
+    background: #CC0D0D;
+    color: #ffff;
+    transform: scale(1.1);
+}
