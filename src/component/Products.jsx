@@ -69,7 +69,7 @@ const Products = () => {
                 <p className="product-desc">{p.desc}</p>
                 <div className="price-hearth">
                   <div>
-                    <p>$ {p.price}</p>
+                    <p>฿ {p.price}</p>
                   </div>
                   <div className="like_share">
                     <p className="hearth">

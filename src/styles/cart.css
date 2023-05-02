@@ -41,6 +41,10 @@
     align-items: center;
 }
 
+.cart-product-detail img {
+    width: 15%;
+}
+
 .cart-product-detail p,
 .cart-product-detail h3 {
     margin: 0;

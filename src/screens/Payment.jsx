@@ -1,7 +1,28 @@
 import React from 'react';
 import '../styles/payment.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Payment = () => {
+  const navigate = useNavigate();
+  const notify = () =>
+    toast.success('Your order submited', {
+      position: 'top-right',
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: 'light',
+    });
+  const handleSubmit = () => {
+    notify();
+    setTimeout(() => {
+      window.location.href = '/';
+    }, 4000);
+  };
   return (
     <div className="payment-con">
       <h1>Payment Details</h1>
@@ -50,11 +71,11 @@ const Payment = () => {
           Please review the details correctly before submit.
         </h3>
         <div className="submit-cancel">
-          <button type="submit" className="submit-btn">
+          <button type="submit" onClick={handleSubmit} className="submit-btn">
             Submit
           </button>
+          <ToastContainer />
           <Link to="/cart">
-            {' '}
             <button type="cancel" className="cancel-btn">
               Cancel
             </button>

@@ -14,30 +14,30 @@ const Cart = () => {
           </div>
           <div className="cart-products">
             <div className="cart-product-detail">
-              <img src="images/h3.svg" alt="" />
+              <img src="images/product/pd1.jpg" alt="" />
               <div>
                 <h3>butter</h3>
-                <p>เนยจืด นำเข้าจากดาวเสาร์</p>
+                <p>Allowrie อลาวรี่เนยแท้(เนยเค็ม) ขนาด 227กรัม</p>
               </div>
             </div>
             <h3>1</h3>
-            <h3>$100</h3>
+            <h3>฿135</h3>
           </div>
           <div className="cart-products">
             <div className="cart-product-detail">
-              <img src="images/h2.svg" alt="" />
+              <img src="images/product/pd2.jpg" alt="" />
               <div>
                 <h3>beef</h3>
-                <p>เนยจืด นำเข้าจากดาวเสาร์</p>
+                <p>เอฟบี เชฟ เนื้อสันคอ USA สไลซ์ 120 ก.</p>
               </div>
             </div>
-            <h3>1</h3>
-            <h3>$100</h3>
+            <h3>2</h3>
+            <h3>฿448</h3>
           </div>
           <div className="cart-products">
             <div className="cart-product-detail"></div>
             <h3>Total</h3>
-            <h3>$200</h3>
+            <h3>฿583</h3>
           </div>
           <Link to="/cart/payment-details">
             <button className="check-out-btn">Check out</button>
