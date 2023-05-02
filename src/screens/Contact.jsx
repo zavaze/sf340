@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/contact.css';
+import { Link } from 'react-router-dom';
 const Contact = () => {
   return (
     <div className="contact-con">
@@ -8,7 +9,10 @@ const Contact = () => {
         <h3>@Interpark , Thammasat rangsit campus</h3>
         <h3> Tel.03xxxxxxx</h3>
       </header>
-      <div className="map">map location , Google API</div>
+      <a href="https://goo.gl/maps/6sJvGKxUPo835BBM9" target="popup">
+        <img className="map" src="/images/100.png" alt="" />
+      </a>
+
       <div className="partners">
         <h1>Our Partners</h1>
         <div className="partners-icon">
