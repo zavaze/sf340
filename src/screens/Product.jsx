@@ -7,18 +7,24 @@ import {
   AiOutlineArrowRight,
 } from 'react-icons/ai';
 import { RiShoppingBasket2Line } from 'react-icons/ri';
+import { products } from '../data';
+import { Link, useParams } from 'react-router-dom';
+
 const Product = () => {
+  const { id } = useParams();
+  const selectedProduct = products.find((item) => item.id === parseInt(id));
+
   return (
     <div className="product-con">
       <h1>INGREDIANT</h1>
       <div className="product">
         <div className="product-left">
           <div className="product-card">
-            <img src="/images/h3.svg" alt="" />
+            <img src={selectedProduct.img} alt="" />
             <div className="product-detail">
               <div>
-                <h2>BUTTER</h2>
-                <p className="product-desc">เนยจืด นำเข้าจากดาวเสาร์</p>
+                <h2>{selectedProduct.name}</h2>
+                <p className="product-desc">{selectedProduct.desc}</p>
               </div>
               <div className="like_share">
                 <p className="hearth">
@@ -34,7 +40,9 @@ const Product = () => {
         <div className="product-right">
           <div className="product-header">
             <div>
-              <h1>BUTTER</h1>
+              <h1 style={{ textTransform: 'uppercase' }}>
+                {selectedProduct.name}
+              </h1>
               <p className="star">
                 <AiFillStar />
                 <AiFillStar />
@@ -44,7 +52,7 @@ const Product = () => {
               </p>
             </div>
             <div className="price">
-              <h2>$100</h2>
+              <h2>${selectedProduct.price}</h2>
             </div>
           </div>
           <div className="product-info">
@@ -65,7 +73,9 @@ const Product = () => {
             <button className="add">
               <RiShoppingBasket2Line /> Add to cart
             </button>
-            <button className="buy">Buy</button>
+            <Link to="/cart">
+              <button className="buy">Buy</button>
+            </Link>
           </div>
         </div>
       </div>
